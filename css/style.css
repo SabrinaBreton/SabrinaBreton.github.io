@@ -54,3 +54,94 @@ h2 {
     width: 100px;
     margin: 10px;
 }
+
+/*Mon code commence ici*/
+.square
+{
+    /*Utilisation de la nouvelle famille creer si dessous*/
+    font-family: Agbalumo;
+}
+img
+{
+    /*Change la taille de l'image et rend l'image ronde*/
+    width: 125px;
+    border-radius: 60%;
+}
+footer
+{
+    /*Change l'emplacement des informations dans le footer*/
+    display: flex;
+    justify-content: space-between;
+}
+#Source
+{
+    /*Met la source en colomne*/
+ display: flex;
+  flex-direction: column;
+}
+.square:hover
+{
+    /*Change couleur background lorsque souris est dessus une case*/
+    background-color: rgb(211, 239, 211);
+    /*Change couleur ecriture lorsque souris est dessus une case*/
+}
+button:hover
+{
+    /*Change couleur background lorsque souris est dessus une case*/
+    background-color: lightcoral;
+}
+img:hover
+{
+    /*Change emplacement image lorsque souris est dessus image*/
+    transform: translateY(-25px);  
+}
+h4
+{
+    /*Change emplacement h4 au debut*/
+    display: flex;
+    justify-content: flex-start;
+}
+a
+{
+    /*Change taille lien a*/
+    font-size: 0.90em;
+}
+/*Change fond si marque dans la case*/
+.square.checked:hover {
+    background-color: rgb(232, 179, 179);
+    color: red;
+}
+/*Personalisation de l`ecriture sur la balise texte avec un id ""*/
+#Moi
+{
+    animation: changerCouleurMoi 10s infinite alternate;
+}
+@font-face {
+    /*Creation nouvelle famille d'ecriture*/
+    font-family: Agbalumo;
+    src: url(/Assets/Agbalumo/Agbalumo-Regular.ttf);
+}
+/*Creation d'une animation de couleur*/
+@keyframes changerCouleurMoi
+{
+    0%
+    {
+        color: blue;
+    }
+    25%
+    {
+        color: lightskyblue;
+    }
+    50%
+    {
+        color: rgb(164, 245, 245);
+    }
+    75%
+    {
+        color: rgb(134, 244, 229);
+    }
+    100%
+    {
+        color: rgb(83, 240, 187);
+    }
+}
